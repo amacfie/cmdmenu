@@ -15,12 +15,16 @@
     ]
   },
   {
+    "name": "Resolve merge conflicts",
+    "cmdText": "git diff\ngit add <resolved_files>\ngit rebase --continue"
+  },
+  {
     "name": "Rename branch",
     "keywords": "local",
     "cmdText": "git branch -m <old_branch> <new_branch>"
   },
   {
-    "name": "Remove file from git",
+    "name": "Remove file from git but don't delete",
     "keywords": "stop track tracking ignore",
     "cmdText": "git rm --staged <file>"
   },
@@ -49,12 +53,6 @@
     "name": "Stage all changes",
     "cmdText": "git add .",
     "keywords": "add",
-    "complete": true
-  },
-  {
-    "name": "List remotes",
-    "cmdText": "git remote -v",
-    "keywords": "show",
     "complete": true
   },
   {
@@ -114,6 +112,26 @@
         "name": "Undo commits but preserve working copy",
         "keywords": "reset",
         "cmdText": "git reset <good_commit>"
+      }
+    ]
+  },
+  {
+    "name": "Remotes [menu]",
+    "subtasks": [
+      {
+        "name": "List remotes",
+        "cmdText": "git remote -v",
+        "keywords": "show",
+        "complete": true
+      },
+      {
+        "name": "Add remote",
+        "cmdText": "git remote add <shortname> <url>"
+      },
+      {
+        "name": "Remove remote",
+        "cmdText": "git remote rm <shortname>",
+        "keywords": "delete"
       }
     ]
   },
