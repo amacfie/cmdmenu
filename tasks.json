@@ -19,6 +19,10 @@
     "cmdText": "git diff\ngit add <resolved_files>\ngit rebase --continue"
   },
   {
+    "name": "Rebase one commit (or branch) to a cousin",
+    "cmdText": "git rebase <dest_commit> <src_commit>"
+  },
+  {
     "name": "Rename branch",
     "keywords": "local",
     "cmdText": "git branch -m <old_branch> <new_branch>"
@@ -78,6 +82,7 @@
     "subtasks" : [
       {
         "name": "Create branch",
+        "keywords": "new",
         "cmdText": "git checkout -b <branch>"
       },
       {
@@ -101,22 +106,23 @@
       },
       {
         "name": "Discard all changes in working copy",
-        "keywords": "reset",
-        "cmdText": "git reset --hard HEAD"
+        "keywords": "reset revert",
+        "cmdText": "git reset --hard HEAD",
+        "numParams": 0
       },
       {
         "name": "Discard changes to file in working copy",
-        "keywords": "checkout",
+        "keywords": "checkout revert",
         "cmdText": "git checkout HEAD <file>"
       },
       {
         "name": "Undo commits and restore working copy",
-        "keywords": "reset rebase interactive",
+        "keywords": "rebase interactive",
         "cmdText": "git rebase -i <good_commit>"
       },
       {
         "name": "Undo commits but preserve working copy",
-        "keywords": "reset",
+        "keywords": "reset keep",
         "cmdText": "git reset <good_commit>"
       }
     ]
@@ -161,13 +167,11 @@
     "subtasks": [
       {
         "name": "Clone",
-        "cmdText": "git clone <url>",
-        "numParams": 0
+        "cmdText": "git clone <url>"
       },
       {
         "name": "Clone single branch",
-        "cmdText": "git clone <url> --branch <branch> --single-branch",
-        "numParams": 0
+        "cmdText": "git clone <url> --branch <branch> --single-branch"
       }
     ]
   }

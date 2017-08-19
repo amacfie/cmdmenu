@@ -53,6 +53,7 @@ var ask = function (lastAnswers) {
       type: 'list',
       name: 'task',
       message: 'Select subtask',
+      pageSize: 5,
       choices: task.subtasks})
       .then(ask));
   }
@@ -62,6 +63,7 @@ inq.prompt({
   type: 'list',
   name: 'task',
   message: 'Select task',
+  pageSize: 3,
   choices: taskMatches })
 .then(ask);
 
