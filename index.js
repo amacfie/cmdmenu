@@ -35,7 +35,7 @@ var ask = function (lastAnswers) {
   var task = allTasks[lastAnswers['task']];
   if (!task.subtasks) {
     console.log(task.cmdText);
-    if (task.complete) {
+    if (task.numParams === 0) {
       inq.prompt({
         type: 'confirm',
         name: 'run',

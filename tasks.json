@@ -32,12 +32,12 @@
     "name": "Commit with no message",
     "keywords": "blank nomsg msg",
     "cmdText": "git commit -m '' --allow-empty-message",
-    "complete": true
+    "numParams": 0
   },
   {
     "name": "Force push",
     "cmdText": "git push --force",
-    "complete": true
+    "numParams": 0
   },
   {
     "name": "Show log for specific file",
@@ -53,25 +53,25 @@
     "name": "Stage all changes",
     "cmdText": "git add .",
     "keywords": "add",
-    "complete": true
+    "numParams": 0
   },
   {
     "name": "List stashes",
     "cmdText": "git stash list",
     "keywords": "show",
-    "complete": true
+    "numParams": 0
   },
   {
     "name": "List tags",
     "cmdText": "git tag",
     "keywords": "show",
-    "complete": true
+    "numParams": 0
   },
   {
     "name": "List branches",
     "cmdText": "git branch -av",
     "keywords": "show",
-    "complete": true
+    "numParams": 0
   },
   {
     "name": "Create branch [menu]",
@@ -122,7 +122,7 @@
         "name": "List remotes",
         "cmdText": "git remote -v",
         "keywords": "show",
-        "complete": true
+        "numParams": 0
       },
       {
         "name": "Add remote",
@@ -141,12 +141,12 @@
       {
         "name": "Diff working copy and staged",
         "cmdText": "git diff",
-        "complete": true
+        "numParams": 0
       },
       {
         "name": "Diff staged and HEAD",
         "cmdText": "git diff --staged",
-        "complete": true
+        "numParams": 0
       }
     ]
   },
@@ -156,12 +156,12 @@
       {
         "name": "Clone",
         "cmdText": "git clone <url>",
-        "complete": false
+        "numParams": 0
       },
       {
         "name": "Clone single branch",
         "cmdText": "git clone <url> --branch <branch> --single-branch",
-        "complete": false
+        "numParams": 0
       }
     ]
   }
