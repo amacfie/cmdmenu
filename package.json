@@ -1,0 +1,18 @@
+{
+  "author": "Andrew MacFie",
+  "license": "MIT",
+  "name": "gat",
+  "version": "0.0.1",
+  "description": "Git cheatsheet",
+  "main": "index.js",
+  "preferGlobal": "true",
+  "dependencies": {
+    "fuse.js": "^3.0.5",
+    "inquirer": "^3.2.2",
+    "shelljs": "^0.7.8",
+    "yargs": "^8.0.2"
+  },
+  "bin": {
+    "gat": "index.js"
+  }
+}

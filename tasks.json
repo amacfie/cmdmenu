@@ -1,0 +1,55 @@
+[
+  {
+    "name": "List branches",
+    "cmdText": "git branch -av",
+    "complete": true
+  },
+  {
+    "name": "Unstage file",
+    "cmdText": "git reset HEAD <file>"
+  },
+  {
+    "name": "Create branch [menu]",
+    "subtasks" : [
+      {
+        "name": "Create branch",
+        "cmdText": "git checkout -b <branch>"
+      },
+      {
+        "name": "Create branch but don't checkout",
+        "cmdText": "git branch <branch>"
+      }
+
+    ]
+  },
+  {
+    "name": "Diff [menu]",
+    "subtasks": [
+      {
+        "name": "Diff working copy and staged",
+        "cmdText": "git diff",
+        "complete": true
+      },
+      {
+        "name": "Diff staged and HEAD",
+        "cmdText": "git diff --staged",
+        "complete": true
+      }
+    ]
+  },
+  {
+    "name": "Clone [menu]",
+    "subtasks": [
+      {
+        "name": "Clone",
+        "cmdText": "git clone <url>",
+        "complete": false
+      },
+      {
+        "name": "Clone single branch",
+        "cmdText": "git clone <url> --branch <branch> --single-branch",
+        "complete": false
+      }
+    ]
+  }
+]
