@@ -1,9 +1,9 @@
 {
   "author": "Andrew MacFie",
   "license": "MIT",
-  "name": "gat",
+  "name": "git-menu",
   "version": "0.0.1",
-  "description": "Git cheatsheet",
+  "description": "Command-line fuzzy git cheatsheet",
   "main": "index.js",
   "preferGlobal": "true",
   "dependencies": {
@@ -13,6 +13,6 @@
     "yargs": "^8.0.2"
   },
   "bin": {
-    "gat": "index.js"
+    "gitmenu": "index.js"
   }
 }
