@@ -1,8 +1,23 @@
 [
   {
-    "name": "Delete branch",
-    "keywords": "remove",
-    "cmdText": "git branch -d <branch>"
+    "name": "Delete branches [menu]",
+    "subtasks": [
+      {
+        "name": "Delete branch",
+        "keywords": "remove",
+        "cmdText": "git branch -d <branch>"
+      },
+      {
+        "name": "Delete remote branch",
+        "keywords": "remove",
+        "cmdText": "git push <remote> --delete <branch>"
+      }
+    ]
+  },
+  {
+    "name": "Rename branch",
+    "keywords": "local",
+    "cmdText": "git branch -m <old_branch> <new_branch>"
   },
   {
     "name": "Remove file from git",
@@ -24,6 +39,11 @@
     "name": "Show log for specific file",
     "cmdText": "git log -p <file>",
     "keywords": "single"
+  },
+  {
+    "name": "Stage part of a file",
+    "cmdText": "git add -p <file>",
+    "keywords": "add patch single"
   },
   {
     "name": "Stage all changes",
@@ -84,6 +104,16 @@
         "name": "Change commit message",
         "keywords": "msg amend",
         "cmdText": "git rebase -i HEAD~<n>"
+      },
+      {
+        "name": "Undo commits and restore working copy",
+        "keywords": "reset rebase interactive",
+        "cmdText": "git rebase -i <good_commit>"
+      },
+      {
+        "name": "Undo commits but preserve working copy",
+        "keywords": "reset",
+        "cmdText": "git reset <good_commit>"
       }
     ]
   },
