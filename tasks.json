@@ -91,10 +91,6 @@
     "name": "Undo [menu]",
     "subtasks": [
       {
-        "name": "Discard local changes to file",
-        "cmdText": "git checkout HEAD <file>"
-      },
-      {
         "name": "Unstage file",
         "cmdText": "git reset HEAD <file>"
       },
@@ -102,6 +98,16 @@
         "name": "Change commit message",
         "keywords": "msg amend",
         "cmdText": "git rebase -i HEAD~<n>"
+      },
+      {
+        "name": "Discard all changes in working copy",
+        "keywords": "reset",
+        "cmdText": "git reset --hard HEAD"
+      },
+      {
+        "name": "Discard changes to file in working copy",
+        "keywords": "checkout",
+        "cmdText": "git checkout HEAD <file>"
       },
       {
         "name": "Undo commits and restore working copy",
