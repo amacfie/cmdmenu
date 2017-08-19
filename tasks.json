@@ -1,12 +1,38 @@
 [
   {
-    "name": "List branches",
-    "cmdText": "git branch -av",
+    "name": "Commit with no message",
+    "keywords": "blank nomsg msg",
+    "cmdText": "git commit -m '' --allow-empty-message",
     "complete": true
   },
   {
-    "name": "Unstage file",
-    "cmdText": "git reset HEAD <file>"
+    "name": "Force push",
+    "cmdText": "git push --force",
+    "complete": true
+  },
+  {
+    "name": "List remotes",
+    "cmdText": "git remote -v",
+    "keywords": "show",
+    "complete": true
+  },
+  {
+    "name": "List stashes",
+    "cmdText": "git stash list",
+    "keywords": "show",
+    "complete": true
+  },
+  {
+    "name": "List tags",
+    "cmdText": "git tag",
+    "keywords": "show",
+    "complete": true
+  },
+  {
+    "name": "List branches",
+    "cmdText": "git branch -av",
+    "keywords": "show",
+    "complete": true
   },
   {
     "name": "Create branch [menu]",
@@ -20,6 +46,24 @@
         "cmdText": "git branch <branch>"
       }
 
+    ]
+  },
+  {
+    "name": "Undo [menu]",
+    "subtasks": [
+      {
+        "name": "Discard local changes to file",
+        "cmdText": "git checkout HEAD <file>"
+      },
+      {
+        "name": "Unstage file",
+        "cmdText": "git reset HEAD <file>"
+      },
+      {
+        "name": "Change commit message",
+        "keywords": "msg amend",
+        "cmdText": "git rebase -i HEAD~<n>"
+      }
     ]
   },
   {
@@ -53,3 +97,4 @@
     ]
   }
 ]
+
