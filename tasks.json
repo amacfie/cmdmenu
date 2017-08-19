@@ -1,5 +1,15 @@
 [
   {
+    "name": "Delete branch",
+    "keywords": "remove",
+    "cmdText": "git branch -d <branch>"
+  },
+  {
+    "name": "Remove file from git",
+    "keywords": "stop track tracking ignore",
+    "cmdText": "git rm --staged <file>"
+  },
+  {
     "name": "Commit with no message",
     "keywords": "blank nomsg msg",
     "cmdText": "git commit -m '' --allow-empty-message",
@@ -8,6 +18,17 @@
   {
     "name": "Force push",
     "cmdText": "git push --force",
+    "complete": true
+  },
+  {
+    "name": "Show log for specific file",
+    "cmdText": "git log -p <file>",
+    "keywords": "single"
+  },
+  {
+    "name": "Stage all changes",
+    "cmdText": "git add .",
+    "keywords": "add",
     "complete": true
   },
   {
