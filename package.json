@@ -14,5 +14,14 @@
   },
   "bin": {
     "gitmenu": "index.js"
+  },
+  "homepage": "https://github.com/amacfie/gitmenu",
+  "bugs": {
+    "url": "https://github.com/amacfie/gitmenu/issues",
+    "email": "amacfie@sent.com"
+  },
+  "repository" : {
+    "type" : "git" ,
+    "url" : "git@github.com:amacfie/gitmenu.git"
   }
 }

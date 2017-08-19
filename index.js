@@ -3,7 +3,9 @@
 const inq = require('inquirer');
 const argv = require('yargs')
   .demandCommand(1)
-  .usage('$0 <query>')
+  .help('help', 'Show this message and exit.')
+  .usage('usage: $0 <query> [--help]\n\n'
+    + 'Searches for git command syntax relevant to natural language query.')
   .argv;
 const Fuse = require('fuse.js');
 const shell = require('shelljs');
