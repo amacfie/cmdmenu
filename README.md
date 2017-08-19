@@ -14,6 +14,8 @@ Tell `gitmenu` what you want and it will help you find the right command.
     $ alias gim=gitmenu
     $ gim <query>
 
+Example queries: list branches, undo commit, show log for single file
+
 # Customizing
 
 Tasks are stored in `tasks.json`, so it's easy to add more or change existing
