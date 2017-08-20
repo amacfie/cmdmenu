@@ -39,6 +39,11 @@
     "numParams": 0
   },
   {
+    "name": "Pull, but rebase instead of merging",
+    "cmdText": "git pull --rebase",
+    "numParams": 0
+  },
+  {
     "name": "Force push",
     "cmdText": "git push --force",
     "numParams": 0
