@@ -1,5 +1,21 @@
 [
   {
+    "name": "Uninstall .deb package",
+    "cmdText": "sudo dpkg -r <package>",
+    "keywords": "remove file",
+    "numParams": 1
+  },
+  {
+    "name": "Install .deb file",
+    "cmdText": "sudo dpkg -i <file>.deb",
+    "numParams": 1
+  },
+  {
+    "name": "Convert image to grayscale",
+    "cmdText": "convert <source_file> -colorspace Gray <dest_file>",
+    "numParams": 1
+  },
+  {
     "name": "Kill process",
     "keywords": "end stop",
     "cmdText": "pidof <process_name> | xargs kill -9",
@@ -9,6 +25,12 @@
     "name": "Edit my crontab",
     "keywords": "personal",
     "cmdText": "crontab -e",
+    "numParams": 0
+  },
+  {
+    "name": "See what shell I'm using",
+    "keywords": "get show current name running",
+    "cmdText": "echo $SHELL",
     "numParams": 0
   },
   {
