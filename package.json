@@ -1,9 +1,9 @@
 {
   "author": "Andrew MacFie",
   "license": "MIT",
-  "name": "git-menu",
+  "name": "cmd-menu",
   "version": "0.0.1",
-  "description": "Command-line fuzzy git cheatsheet",
+  "description": "Fuzzy command-line cheatsheet",
   "main": "index.js",
   "preferGlobal": "true",
   "dependencies": {
@@ -13,15 +13,15 @@
     "yargs": "^8.0.2"
   },
   "bin": {
-    "gitmenu": "index.js"
+    "cmdmenu": "index.js"
   },
-  "homepage": "https://github.com/amacfie/gitmenu",
+  "homepage": "https://github.com/amacfie/cmd-menu",
   "bugs": {
-    "url": "https://github.com/amacfie/gitmenu/issues",
+    "url": "https://github.com/amacfie/cmd-menu/issues",
     "email": "amacfie@sent.com"
   },
   "repository" : {
     "type" : "git" ,
-    "url" : "git@github.com:amacfie/gitmenu.git"
+    "url" : "git@github.com:amacfie/cmd-menu.git"
   }
 }

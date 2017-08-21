@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Get Ubuntu distribution version",
+    "keywords": "see show",
+    "cmdText": "lsb_release -a",
+    "numParams": 0
+  },
+  {
+    "name": "Get Linux kernel version",
+    "keywords": "see show",
+    "cmdText": "uname -r",
+    "numParams": 0
+  },
+  {
+    "name": "Cancel all of my print jobs",
+    "cmdText": "lprm -",
+    "numParams": 0
+  },
+  {
+    "name": "Get current username",
+    "cmdText": "echo \"$USER\"",
+    "keywords": "see show",
+    "numParams": 0
+  },
+  {
+    "name": "Get number of CPU cores",
+    "cmdText": "python -c 'import psutil; print(psutil.cpu_count(logical=False))'",
+    "keywords": "see show physical",
+    "numParams": 0
+  }
+]

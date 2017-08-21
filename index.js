@@ -1,16 +1,34 @@
 #!/usr/bin/env node
 
+const shell = require('shelljs');
+const path = require('path');
+const Fuse = require('fuse.js');
 const inq = require('inquirer');
+
+var appPath = path.dirname(process.mainModule.filename);
+var tasksPath = path.join(appPath, 'tasks');
+var stripExtension = function (fn) {
+  return fn.replace(/\.[^/.]+$/, '');
+};
+var taskSetNames = shell.ls(tasksPath).map(stripExtension);
+
 const argv = require('yargs')
   .demandCommand(1)
   .help('help', 'Show this message and exit.')
-  .usage('usage: $0 <query> [--help]\n\n'
-    + 'Searches for git command syntax relevant to natural language query.')
+  .option('a', {
+    alias: ['p', 'c', 't'],
+    type: 'string',
+    demandOption: true,
+    nargs: 1,
+    desc: 'Task set to search in.',
+    choices: taskSetNames
+  })
+  .usage('usage: $0 -a <task_set> <query> [--help]\n\n'
+    + 'Searches for command syntax relevant to natural language query.')
   .argv;
-const Fuse = require('fuse.js');
-const shell = require('shelljs');
 
-const tasks = require('./tasks');
+var taskSetName = argv.a;
+var tasks = require(`./tasks/${taskSetName}.json`);
 
 var allTasks = [];
 var traverseTask = function (task) {

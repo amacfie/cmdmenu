@@ -1,23 +1,24 @@
 # About
 
-Can't remember `git` command syntax?
-Tell `gitmenu` what you want and it will help you find the right command.
+Can't remember the syntax for stuff at the command line?
+Tell `cmdmenu` what you want and it will help you find the right complete
+command.
 
 # Install
 
-    $ git clone git@github.com:amacfie/gitmenu.git
-    $ cd gitmenu
+    $ git clone git@github.com:amacfie/cmd-menu.git
+    $ cd cmd-menu
     $ sudo npm -g install
 
 # Usage
 
-    $ alias gim=gitmenu
+    $ alias gim="cmdmenu -a git"
     $ gim <query>
 
-Example queries: list branches, undo commit, show log for single file
+Example git queries: list branches, undo commit, show log for single file
 
 # Customizing
 
-Tasks are stored in `tasks.json`, so it's easy to add more or change existing
+Task sets are stored in `tasks`, so it's easy to add more or change existing
 tasks.
 
