@@ -1,5 +1,17 @@
 [
   {
+    "name": "Kill process",
+    "keywords": "end stop",
+    "cmdText": "pidof <process_name> | xargs kill -9",
+    "numParams": 1
+  },
+  {
+    "name": "Edit my crontab",
+    "keywords": "personal",
+    "cmdText": "crontab -e",
+    "numParams": 0
+  },
+  {
     "name": "Get Ubuntu distribution version",
     "keywords": "see show",
     "cmdText": "lsb_release -a",
