@@ -1,5 +1,57 @@
 [
   {
+    "name": "Count files [menu]",
+    "subtasks": [
+      {
+        "name": "Count files in a folder recursively",
+        "cmdText": "find <folder> -type f -printf \"\n\" | wc -l",
+        "keywords": "depth",
+        "numParams": 0
+      },
+      {
+        "name": "Count files in a folder, non-recursively",
+        "cmdText": "find <folder> -maxdepth 1 -type f -printf \"\n\" | wc -l",
+        "keywords": "depth",
+        "numParams": 0
+      }
+    ]
+  },
+  {
+    "name": "Python virtual environments [menu]",
+    "subtasks": [
+      {
+        "name": "Delete python virtual environment",
+        "cmdText": "rmvirtualenv <project_name>",
+        "keywords": "remove virtualenv",
+        "numParams": 1
+      },
+      {
+        "name": "Deactivate python virtual environment",
+        "cmdText": "deactivate",
+        "keywords": "unload end exit virtualenv",
+        "numParams": 0
+      },
+      {
+        "name": "Activate python virtual environment",
+        "cmdText": "workon <project_name>",
+        "keywords": "load work on workon enter virtualenv",
+        "numParams": 1
+      },
+      {
+        "name": "Create python virtual environment",
+        "cmdText": "mkvirtualenv -p <python_executable> <project_name>",
+        "keywords": "virtualenv mkvirtualenv",
+        "numParams": 1
+      }
+    ]
+  },
+  {
+    "name": "Install dependencies after running dpkg -i",
+    "cmdText": "sudo apt-get install -f",
+    "keywords": "deb",
+    "numParams": 0
+  },
+  {
     "name": "Uninstall .deb package",
     "cmdText": "sudo dpkg -r <package>",
     "keywords": "remove file",
@@ -13,7 +65,7 @@
   {
     "name": "Convert image to grayscale",
     "cmdText": "convert <source_file> -colorspace Gray <dest_file>",
-    "numParams": 1
+    "numParams": 2
   },
   {
     "name": "Kill process",
