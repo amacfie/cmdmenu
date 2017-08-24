@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
-const shell = require('shelljs');
-const path = require('path');
+const promisify = require('util.promisify');
+
 const Fuse = require('fuse.js');
 const inq = require('inquirer');
+const ncp = require('copy-paste');
+  var copy = promisify(ncp.copy);
+const path = require('path');
+const shell = require('shelljs');
 
 var appPath = path.dirname(process.mainModule.filename);
 var tasksPath = path.join(appPath, 'tasks');
@@ -65,6 +69,17 @@ var ask = function (lastAnswers) {
       .then(function (answers) {
         if (answers['run']) shell.exec(task.cmdText)
       });
+    } else {
+      inq.prompt({
+        type: 'confirm',
+        name: 'copy',
+        message: 'Copy?',
+        default: true
+      })
+      .then(function (answers) {
+        if (answers['copy']) return copy(task.cmdText)
+      })
+     .then( () => process.exit() );
     }
   } else {
     return (inq.prompt({
