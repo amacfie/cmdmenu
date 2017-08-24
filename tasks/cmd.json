@@ -3,13 +3,13 @@
     "name": "Count files [menu]",
     "subtasks": [
       {
-        "name": "Count files in a folder recursively",
+        "name": "Count all files in a folder recursively",
         "cmdText": "find <folder> -type f -printf \"\\n\" | wc -l",
         "keywords": "depth",
         "numParams": 1
       },
       {
-        "name": "Count files in a folder, non-recursively",
+        "name": "Count all files in a folder, non-recursively",
         "cmdText": "find <folder> -maxdepth 1 -type f -printf \"\\n\" | wc -l",
         "keywords": "depth",
         "numParams": 1
