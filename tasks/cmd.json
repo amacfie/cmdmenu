@@ -52,15 +52,32 @@
     "numParams": 0
   },
   {
-    "name": "Uninstall .deb package",
-    "cmdText": "sudo dpkg -r <package>",
-    "keywords": "remove file",
-    "numParams": 1
-  },
-  {
-    "name": "Install .deb file",
-    "cmdText": "sudo dpkg -i <file>.deb",
-    "numParams": 1
+    "name": "dpkg [menu]",
+    "subtasks": [
+     {
+       "name": "Show where a package was installed to",
+       "cmdText": "dpkg -L <package>",
+       "keywords": "files locations",
+       "numParams": 1
+     },
+     {
+       "name": "Find the package the installed a file",
+       "cmdText": "dpkg -S <filename_pattern>",
+       "keywords": "search",
+       "numParams": 1
+     },
+     {
+       "name": "Uninstall .deb package",
+       "cmdText": "sudo dpkg -r <package>",
+       "keywords": "remove file",
+       "numParams": 1
+     },
+     {
+       "name": "Install .deb file",
+       "cmdText": "sudo dpkg -i <file>.deb",
+       "numParams": 1
+     }
+    ]
   },
   {
     "name": "Convert image to grayscale",
@@ -77,6 +94,12 @@
     "name": "Edit my crontab",
     "keywords": "personal",
     "cmdText": "crontab -e",
+    "numParams": 0
+  },
+  {
+    "name": "See TeX version, including distribution",
+    "keywords": "get show latex",
+    "cmdText": "tex --version",
     "numParams": 0
   },
   {
@@ -101,6 +124,12 @@
     "name": "Cancel all of my print jobs",
     "cmdText": "lprm -",
     "numParams": 0
+  },
+  {
+    "name": "See target of symbolic link",
+    "cmdText": "readlink -f <link>",
+    "keywords": "get show",
+    "numParams": 1
   },
   {
     "name": "Get current username",
