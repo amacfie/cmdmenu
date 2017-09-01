@@ -54,30 +54,36 @@
   {
     "name": "dpkg [menu]",
     "subtasks": [
-     {
-       "name": "Show where a package was installed to",
-       "cmdText": "dpkg -L <package>",
-       "keywords": "files locations",
-       "numParams": 1
-     },
-     {
-       "name": "Find the package the installed a file",
-       "cmdText": "dpkg -S <filename_pattern>",
-       "keywords": "search",
-       "numParams": 1
-     },
-     {
-       "name": "Uninstall .deb package",
-       "cmdText": "sudo dpkg -r <package>",
-       "keywords": "remove file",
-       "numParams": 1
-     },
-     {
-       "name": "Install .deb file",
-       "cmdText": "sudo dpkg -i <file>.deb",
-       "numParams": 1
-     }
+      {
+        "name": "Show where a package was installed to",
+        "cmdText": "dpkg -L <package>",
+        "keywords": "files locations",
+        "numParams": 1
+      },
+      {
+        "name": "Find the package the installed a file",
+        "cmdText": "dpkg -S <filename_pattern>",
+        "keywords": "search",
+        "numParams": 1
+      },
+      {
+        "name": "Uninstall .deb package",
+        "cmdText": "sudo dpkg -r <package>",
+        "keywords": "remove file",
+        "numParams": 1
+      },
+      {
+        "name": "Install .deb file",
+        "cmdText": "sudo dpkg -i <file>.deb",
+        "numParams": 1
+      }
     ]
+  },
+  {
+    "name": "Extract range of pages from PDF",
+    "cmdText": "pdftk in.pdf cat <start_page>-<end_page> output out.pdf",
+    "keywords": "cut splice split",
+    "numParams": 2
   },
   {
     "name": "Convert image to grayscale",
@@ -128,7 +134,7 @@
   {
     "name": "See target of symbolic link",
     "cmdText": "readlink -f <link>",
-    "keywords": "get show",
+    "keywords": "get show symlink",
     "numParams": 1
   },
   {
