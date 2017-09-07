@@ -46,6 +46,35 @@
     ]
   },
   {
+    "name": "Show network interfaces",
+    "cmdText": "ifconfig",
+    "keywords": "network net display get list",
+    "numParams": 0
+  },
+  {
+    "name": "Clear wondershaper bandwidth limit on network interface",
+    "cmdText": "sudo wondershaper clear <interface>",
+    "keywords": "throttle",
+    "numParams": 1
+  },
+  {
+    "name": "Put bandwidth limit on network interface",
+    "cmdText": "sudo wondershaper <interface> <down_in_kbps> <up_in_kbps>",
+    "keywords": "throttle traffic shaper",
+    "numParams": 3
+  },
+  {
+    "name": "Add event to Google Calendar",
+    "cmdText": "gcalcli add",
+    "keywords": "gcal gcalcli gcq",
+    "numParams": -1
+  },
+  {
+    "name": "Ping finitely many times",
+    "cmdText": "ping -c <count> <destination>",
+    "numParams": 2
+  },
+  {
     "name": "Install dependencies after running dpkg -i",
     "cmdText": "sudo apt-get install -f",
     "keywords": "deb",
@@ -61,7 +90,7 @@
         "numParams": 1
       },
       {
-        "name": "Find the package the installed a file",
+        "name": "Find the package that installed a file",
         "cmdText": "dpkg -S <filename_pattern>",
         "keywords": "search",
         "numParams": 1
