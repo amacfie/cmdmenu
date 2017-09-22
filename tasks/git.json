@@ -156,7 +156,7 @@
     "name": "Diff [menu]",
     "subtasks": [
       {
-        "name": "Diff working copy and staged",
+        "name": "Diff working copy and HEAD",
         "cmdText": "git diff",
         "numParams": 0
       },

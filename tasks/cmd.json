@@ -47,7 +47,7 @@
   },
   {
     "name": "Show network interfaces",
-    "cmdText": "ifconfig",
+    "cmdText": "ip link",
     "keywords": "network net display get list",
     "numParams": 0
   },
@@ -60,8 +60,14 @@
   {
     "name": "Put bandwidth limit on network interface",
     "cmdText": "sudo wondershaper <interface> <down_in_kbps> <up_in_kbps>",
-    "keywords": "throttle traffic shaper",
+    "keywords": "throttle traffic shaper data",
     "numParams": 3
+  },
+  {
+    "name": "Show file size",
+    "cmdText": "ls -lh <file>",
+    "keywords": "see display get",
+    "numParams": 1
   },
   {
     "name": "Add event to Google Calendar",
@@ -165,6 +171,12 @@
     "cmdText": "readlink -f <link>",
     "keywords": "get show symlink",
     "numParams": 1
+  },
+  {
+    "name": "See total, used, and available RAM",
+    "cmdText": "free -m",
+    "keywords": "get show memory free",
+    "numParams": 0
   },
   {
     "name": "Get current username",
