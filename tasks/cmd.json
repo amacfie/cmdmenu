@@ -46,6 +46,18 @@
     ]
   },
   {
+    "name": "Serve Jekyll site including drafts",
+    "cmdText": "jekyll serve --drafts --watch",
+    "keywords": "blog web hot reload live",
+    "numParams": 0
+  },
+  {
+    "name": "Go to Android device storage directory",
+    "cmdText": "cd /run/user/1000/gvfs",
+    "keywords": "usb phone mount folder location path",
+    "numParams": 0
+  },
+  {
     "name": "Show network interfaces",
     "cmdText": "ip link",
     "keywords": "network net display get list",
@@ -76,15 +88,33 @@
     "numParams": -1
   },
   {
+    "name": "Strip special characters from a filename",
+    "cmdText": "rename 's/[^a-zA-Z0-9_.]/_/g' <file>",
+    "keywords": "remove ascii replace",
+    "numParams": 1
+  },
+  {
     "name": "Ping finitely many times",
     "cmdText": "ping -c <count> <destination>",
+    "keywords": "certain given",
     "numParams": 2
   },
   {
-    "name": "Install dependencies after running dpkg -i",
-    "cmdText": "sudo apt-get install -f",
-    "keywords": "deb",
-    "numParams": 0
+    "name": "apt [menu]",
+    "subtasks": [
+      {
+        "name": "See apt package version before installing",
+        "cmdText": "apt-cache policy <pkg>",
+        "keywords": "number check view",
+        "numParams": 1
+      },
+      {
+        "name": "Install dependencies after running dpkg -i",
+        "cmdText": "sudo apt-get install -f",
+        "keywords": "deb",
+        "numParams": 0
+      }
+    ]
   },
   {
     "name": "dpkg [menu]",
