@@ -1,20 +1,5 @@
 [
   {
-    "name": "Delete branches [menu]",
-    "subtasks": [
-      {
-        "name": "Delete branch",
-        "keywords": "remove",
-        "cmdText": "git branch -d <branch>"
-      },
-      {
-        "name": "Delete remote branch",
-        "keywords": "remove",
-        "cmdText": "git push <remote> --delete <branch>"
-      }
-    ]
-  },
-  {
     "name": "Resolve merge conflicts",
     "cmdText": "git diff\ngit add <resolved_files>\ngit rebase --continue"
   },
@@ -83,6 +68,32 @@
     "numParams": 0
   },
   {
+    "name": "Log [menu]",
+    "subtasks": [
+      {
+        "name": "See contents of last commit",
+        "keywords": "display get view previous single one",
+        "cmdText": "git log -n1 -p",
+        "numParams": 0
+      }
+    ]
+  },
+  {
+    "name": "Delete branches [menu]",
+    "subtasks": [
+      {
+        "name": "Delete branch",
+        "keywords": "remove",
+        "cmdText": "git branch -d <branch>"
+      },
+      {
+        "name": "Delete remote branch",
+        "keywords": "remove",
+        "cmdText": "git push <remote> --delete <branch>"
+      }
+    ]
+  },
+  {
     "name": "Create branch [menu]",
     "subtasks" : [
       {
@@ -101,6 +112,11 @@
     "name": "Undo [menu]",
     "subtasks": [
       {
+        "name": "Cancel merge with outstanding conflicts",
+        "cmdText": "git merge --abort",
+        "numParams": 0
+      },
+      {
         "name": "Unstage file",
         "cmdText": "git reset HEAD <file>"
       },
@@ -116,9 +132,20 @@
         "numParams": 0
       },
       {
+        "name": "Discard some changes to file in working copy",
+        "keywords": "checkout revert",
+        "cmdText": "git checkout -p"
+      },
+      {
         "name": "Discard changes to file in working copy",
         "keywords": "checkout revert",
         "cmdText": "git checkout HEAD <file>"
+      },
+      {
+        "name": "Discard latest commits not on remote",
+        "keywords": "sync same",
+        "cmdText": "git reset --hard <remote_branch>",
+        "numParams": 1
       },
       {
         "name": "Undo commits and restore working copy",

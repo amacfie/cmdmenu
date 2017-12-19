@@ -46,6 +46,12 @@
     ]
   },
   {
+    "name": "Get file encoding",
+    "cmdText": "file -i <file>",
+    "keywords": "view see display",
+    "numParams": 1
+  },
+  {
     "name": "Serve Jekyll site including drafts",
     "cmdText": "jekyll serve --drafts --watch",
     "keywords": "blog web hot reload live",

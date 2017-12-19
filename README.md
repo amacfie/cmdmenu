@@ -4,6 +4,8 @@ Can't remember the syntax for stuff at the command line?
 Tell `cmdmenu` what you want and it will help you find the right complete
 command.
 
+Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
+
 # Install
 
     $ git clone git@github.com:amacfie/cmd-menu.git
