@@ -60,7 +60,7 @@
   {
     "name": "Go to Android device storage directory",
     "cmdText": "cd /run/user/1000/gvfs",
-    "keywords": "usb phone mount folder location path",
+    "keywords": "usb phone mount folder location path dir",
     "numParams": 0
   },
   {
@@ -101,13 +101,13 @@
   {
     "name": "Make folder and any nonexisting parents",
     "cmdText": "mkdir -p <folder>",
-    "keywords": "recursive create directory all containing",
+    "keywords": "recursive create directory all containing dir",
     "numParams": 1
   },
   {
     "name": "Show folder size",
     "cmdText": "du -sh <folder>",
-    "keywords": "see display get directory",
+    "keywords": "see display get directory dir",
     "numParams": 1
   },
   {

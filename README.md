@@ -14,10 +14,27 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
 
 # Usage
 
+Example.
+
+    $ cmdmenu -a cmd "get folder size"
+    ? Select task (Use arrow keys)
+    ❯ Show folder size
+      Show file size
+      Merge folders
+    (Move up and down to reveal more choices)
+
+press enter
+
+    du -sh <folder>
+    ? Copy? (Y/n)
+
+Creating aliases is recommended.
+
     $ alias gim="cmdmenu -a git"
     $ gim <query>
 
-Example git queries: `list branches`, `undo commit`, `show log for single file`
+Some example git queries: `list branches`, `undo commit`, `show log for single
+file`
 
 # Customizing
 
