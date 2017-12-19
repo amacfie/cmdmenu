@@ -15,7 +15,7 @@ command.
     $ alias gim="cmdmenu -a git"
     $ gim <query>
 
-Example git queries: list branches, undo commit, show log for single file
+Example git queries: `list branches`, `undo commit`, `show log for single file`
 
 # Customizing
 

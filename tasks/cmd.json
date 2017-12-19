@@ -76,6 +76,35 @@
     "numParams": 3
   },
   {
+    "name": "Unpack compressed file",
+    "cmdText": "unp <file>",
+    "keywords": "archive archived unzip zip tar gzip",
+    "numParams": 1
+  },
+  {
+    "name": "Merge folders",
+    "cmdText": "merge-dirs <src_folder> <dest_folder>",
+    "numParams": 2
+  },
+  {
+    "name": "Copy file and see progress",
+    "cmdText": "rsync --info=progress2 <src_file> <dest_file>",
+    "keywords": "rsync speed",
+    "numParams": 2
+  },
+  {
+    "name": "Make folder and any nonexisting parents",
+    "cmdText": "mkdir -p <folder>",
+    "keywords": "recursive create directory all containing",
+    "numParams": 1
+  },
+  {
+    "name": "Show folder size",
+    "cmdText": "du -sh <folder>",
+    "keywords": "see display get directory",
+    "numParams": 1
+  },
+  {
     "name": "Show file size",
     "cmdText": "ls -lh <file>",
     "keywords": "see display get",
@@ -86,6 +115,18 @@
     "cmdText": "gcalcli add",
     "keywords": "gcal gcalcli gcq",
     "numParams": -1
+  },
+  {
+    "name": "Remove first line from file",
+    "cmdText": "sed -i '1d' <file>",
+    "keywords": "sed strip delete tail",
+    "numParams": 1
+  },
+  {
+    "name": "See free storage space",
+    "cmdText": "df -h --total",
+    "keywords": "view get hdd hard drive gb available used",
+    "numParams": 0
   },
   {
     "name": "Strip special characters from a filename",
