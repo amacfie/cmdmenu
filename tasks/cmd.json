@@ -228,20 +228,56 @@
   },
   {
     "name": "Get Ubuntu distribution version",
-    "keywords": "see show",
+    "keywords": "see show display",
     "cmdText": "lsb_release -a",
     "numParams": 0
   },
   {
     "name": "Get Linux kernel version",
-    "keywords": "see show",
+    "keywords": "see show display",
     "cmdText": "uname -r",
     "numParams": 0
   },
   {
+    "name": "End process",
+    "cmdText": "killall -9 <proc_name>",
+    "keywords": "kill terminate",
+    "numParams": 1
+  },
+  {
+    "name": "Copy ssh public key to server",
+    "cmdText": "ssh-copy-id <user>@<host>",
+    "numParams": 2
+  },
+  {
+    "name": "Find file by name across filesystem",
+    "cmdText": "locate -q <pattern>",
+    "keywords": "search locate",
+    "numParams": 1
+  },
+  {
     "name": "Cancel all of my print jobs",
     "cmdText": "lprm -",
+    "keywords": "printer kill terminate",
     "numParams": 0
+  },
+  {
+    "name": "Scan range of IP addresses for alive hosts and services",
+    "cmdText": "nmap <ip_range>",
+    "keywords": "network net nmap",
+    "numParams": 1
+  },
+  {
+    "name": "Port scan",
+    "cmdText": "nmap <host>",
+    "keywords": "network net nmap",
+    "numParams": 1
+  },
+  {
+    "name": "Create symbolic link",
+    "cmdText": "ln -sf <src_absolute_path> <link_absolute_path>",
+    "keywords": "make new update change add symlink",
+    "numParams": 2
   },
   {
     "name": "See target of symbolic link",
