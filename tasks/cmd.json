@@ -17,6 +17,51 @@
     ]
   },
   {
+    "name": "apt [menu]",
+    "subtasks": [
+      {
+        "name": "See apt package version before installing",
+        "cmdText": "apt-cache policy <pkg>",
+        "keywords": "number check view",
+        "numParams": 1
+      },
+      {
+        "name": "Install dependencies after running dpkg -i",
+        "cmdText": "sudo apt-get install -f",
+        "keywords": "deb",
+        "numParams": 0
+      }
+    ]
+  },
+  {
+    "name": "dpkg [menu]",
+    "subtasks": [
+      {
+        "name": "Show where a package was installed to",
+        "cmdText": "dpkg -L <package>",
+        "keywords": "files locations",
+        "numParams": 1
+      },
+      {
+        "name": "Find the package that installed a file",
+        "cmdText": "dpkg -S <filename_pattern>",
+        "keywords": "search",
+        "numParams": 1
+      },
+      {
+        "name": "Uninstall .deb package",
+        "cmdText": "sudo dpkg -r <package>",
+        "keywords": "remove file",
+        "numParams": 1
+      },
+      {
+        "name": "Install .deb file",
+        "cmdText": "sudo dpkg -i <file>.deb",
+        "numParams": 1
+      }
+    ]
+  },
+  {
     "name": "Python virtual environments [menu]",
     "subtasks": [
       {
@@ -46,6 +91,59 @@
     ]
   },
   {
+    "name": "Networking [menu]",
+    "subtasks": [
+      {
+        "name": "Get public IP address",
+        "cmdText": "curl -s ipinfo.io/ip",
+        "keywords": "see display",
+        "numParams": 0
+      },
+      {
+        "name": "Get main local IP address",
+        "cmdText": "ip route get 8.8.8.8 | awk '{print $NF; exit}'",
+        "keywords": "see display private ip",
+        "numParams": 0
+      },
+      {
+        "name": "Ping finitely many times",
+        "cmdText": "ping -c <count> <destination>",
+        "keywords": "certain given",
+        "numParams": 2
+      },
+      {
+        "name": "Scan range of IP addresses for alive hosts and services",
+        "cmdText": "nmap <ip_range>",
+        "keywords": "network net nmap",
+        "numParams": 1
+      },
+      {
+        "name": "Port scan",
+        "cmdText": "nmap <host>",
+        "keywords": "network net nmap",
+        "numParams": 1
+      },
+      {
+        "name": "Show network interfaces",
+        "cmdText": "ip link",
+        "keywords": "network net display get list",
+        "numParams": 0
+      },
+      {
+        "name": "Clear wondershaper bandwidth limit on network interface",
+        "cmdText": "sudo wondershaper clear <interface>",
+        "keywords": "throttle",
+        "numParams": 1
+      },
+      {
+        "name": "Put bandwidth limit on network interface",
+        "cmdText": "sudo wondershaper <interface> <down_in_kbps> <up_in_kbps>",
+        "keywords": "throttle traffic shaper data",
+        "numParams": 3
+      }
+    ]
+  },
+  {
     "name": "Get file encoding",
     "cmdText": "file -i <file>",
     "keywords": "view see display",
@@ -62,24 +160,6 @@
     "cmdText": "cd /run/user/1000/gvfs",
     "keywords": "usb phone mount folder location path dir",
     "numParams": 0
-  },
-  {
-    "name": "Show network interfaces",
-    "cmdText": "ip link",
-    "keywords": "network net display get list",
-    "numParams": 0
-  },
-  {
-    "name": "Clear wondershaper bandwidth limit on network interface",
-    "cmdText": "sudo wondershaper clear <interface>",
-    "keywords": "throttle",
-    "numParams": 1
-  },
-  {
-    "name": "Put bandwidth limit on network interface",
-    "cmdText": "sudo wondershaper <interface> <down_in_kbps> <up_in_kbps>",
-    "keywords": "throttle traffic shaper data",
-    "numParams": 3
   },
   {
     "name": "Unpack compressed file",
@@ -139,57 +219,6 @@
     "cmdText": "rename 's/[^a-zA-Z0-9_.]/_/g' <file>",
     "keywords": "remove ascii replace",
     "numParams": 1
-  },
-  {
-    "name": "Ping finitely many times",
-    "cmdText": "ping -c <count> <destination>",
-    "keywords": "certain given",
-    "numParams": 2
-  },
-  {
-    "name": "apt [menu]",
-    "subtasks": [
-      {
-        "name": "See apt package version before installing",
-        "cmdText": "apt-cache policy <pkg>",
-        "keywords": "number check view",
-        "numParams": 1
-      },
-      {
-        "name": "Install dependencies after running dpkg -i",
-        "cmdText": "sudo apt-get install -f",
-        "keywords": "deb",
-        "numParams": 0
-      }
-    ]
-  },
-  {
-    "name": "dpkg [menu]",
-    "subtasks": [
-      {
-        "name": "Show where a package was installed to",
-        "cmdText": "dpkg -L <package>",
-        "keywords": "files locations",
-        "numParams": 1
-      },
-      {
-        "name": "Find the package that installed a file",
-        "cmdText": "dpkg -S <filename_pattern>",
-        "keywords": "search",
-        "numParams": 1
-      },
-      {
-        "name": "Uninstall .deb package",
-        "cmdText": "sudo dpkg -r <package>",
-        "keywords": "remove file",
-        "numParams": 1
-      },
-      {
-        "name": "Install .deb file",
-        "cmdText": "sudo dpkg -i <file>.deb",
-        "numParams": 1
-      }
-    ]
   },
   {
     "name": "Extract range of pages from PDF",
@@ -262,18 +291,6 @@
     "numParams": 0
   },
   {
-    "name": "Scan range of IP addresses for alive hosts and services",
-    "cmdText": "nmap <ip_range>",
-    "keywords": "network net nmap",
-    "numParams": 1
-  },
-  {
-    "name": "Port scan",
-    "cmdText": "nmap <host>",
-    "keywords": "network net nmap",
-    "numParams": 1
-  },
-  {
     "name": "Create symbolic link",
     "cmdText": "ln -sf <src_absolute_path> <link_absolute_path>",
     "keywords": "make new update change add symlink",
@@ -286,9 +303,33 @@
     "numParams": 1
   },
   {
+    "name": "Exit shell but leave subprocesses running",
+    "cmdText": "disown -a && exit",
+    "keywords": "keep background close preserve",
+    "numParams": 0
+  },
+  {
+    "name": "Mount temporary RAM partition",
+    "cmdText": "mount -t tmpfs tmpfs /mnt -o size=<num_mb>m",
+    "keywords": "storage memory",
+    "numParams": 1
+  },
+  {
     "name": "See total, used, and available RAM",
     "cmdText": "free -m",
     "keywords": "get show memory free",
+    "numParams": 0
+  },
+  {
+    "name": "Launch HTTP file server here",
+    "cmdText": "python -m SimpleHTTPServer",
+    "keywords": "web start serve",
+    "numParams": 0
+  },
+  {
+    "name": "Get BTC price",
+    "cmdText": "echo \"$(curl -s https://api.coindesk.com/v1/bpi/currentprice/usd.json | grep -o 'rate\":\"[^\"]*' | cut -d\\\" -f3)\"",
+    "keywords": "bitcoin bitcoins usd conversion rate",
     "numParams": 0
   },
   {
@@ -304,3 +345,4 @@
     "numParams": 0
   }
 ]
+
