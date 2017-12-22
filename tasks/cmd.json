@@ -232,12 +232,6 @@
     "numParams": 2
   },
   {
-    "name": "Kill process",
-    "keywords": "end stop",
-    "cmdText": "pidof <process_name> | xargs kill -9",
-    "numParams": 1
-  },
-  {
     "name": "Edit my crontab",
     "keywords": "personal",
     "cmdText": "crontab -e",
