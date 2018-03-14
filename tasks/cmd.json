@@ -327,6 +327,11 @@
     "numParams": 0
   },
   {
+    "name": "Quick weather",
+    "cmdText": "curl wttr.in",
+    "numParams": 0
+  },
+  {
     "name": "Get current username",
     "cmdText": "echo \"$USER\"",
     "keywords": "see show",
