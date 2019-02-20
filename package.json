@@ -1,7 +1,7 @@
 {
   "author": "Andrew MacFie",
   "license": "MIT",
-  "name": "cmd-menu",
+  "name": "cmdmenu",
   "version": "0.0.1",
   "description": "Fuzzy command-line cheatsheet",
   "main": "index.js",
@@ -17,13 +17,13 @@
   "bin": {
     "cmdmenu": "index.js"
   },
-  "homepage": "https://github.com/amacfie/cmd-menu",
+  "homepage": "https://github.com/amacfie/cmdmenu",
   "bugs": {
-    "url": "https://github.com/amacfie/cmd-menu/issues",
+    "url": "https://github.com/amacfie/cmdmenu/issues",
     "email": "amacfie@sent.com"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:amacfie/cmd-menu.git"
+    "url": "git@github.com:amacfie/cmdmenu.git"
   }
 }

@@ -1,10 +1,10 @@
 # About
 
 Can't remember the syntax for stuff at the command line?
-Tell `cmdmenu` what you want and it will help you find the right complete
-command.
+Make cheatsheets and search them with `cmdmenu`.
 
 Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
+
 
 # Install
 
@@ -12,32 +12,32 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
     $ cd cmd-menu
     $ sudo npm -g install
 
+
 # Usage
 
-Example.
+1. Create/get/customize JSON task files. Examples of the file format are
+  [here](https://github.com/amacfie/cmdmenu_tasks).
+  Each task has a description and a list of keywords to help you search for it.
 
-    $ cmdmenu -a cmd "get folder size"
-    ? Select task (Use arrow keys)
-    ❯ Show folder size
-      Show file size
-      Merge folders
-    (Move up and down to reveal more choices)
+2. Make an alias for each task file.
+```bash
+$ alias shm="cmdmenu -f ~/cmdmenu_tasks/ubuntu_general.json"
+$ alias gim="cmdmenu -f ~/cmdmenu_tasks/git.json"
+```
 
+3. Get task syntax at the command line.
+```
+$ gim get folder size
+? Select task (Use arrow keys)
+❯ Show folder size
+  Show file size
+  Merge folders
+(Move up and down to reveal more choices)
+```
 press enter
 
-    du -sh <folder>
-    ? Copy? (Y/n)
-
-Creating aliases is recommended.
-
-    $ alias gim="cmdmenu -a git"
-    $ gim <query>
-
-Some example git queries: `list branches`, `undo commit`, `show log for single
-file`
-
-# Customizing
-
-Task sets are stored in `tasks`, so it's easy to add more or change existing
-tasks.
+```
+du -sh <folder>
+? Copy? (Y/n)
+```
 
