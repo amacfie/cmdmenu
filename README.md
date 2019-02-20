@@ -20,10 +20,10 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
   Each task has a description and a list of keywords to help you search for it.
 
 2. Make an alias for each task file.
-```bash
-$ alias shm="cmdmenu -f ~/cmdmenu_tasks/ubuntu_general.json"
-$ alias gim="cmdmenu -f ~/cmdmenu_tasks/git.json"
-```
+    ```bash
+    $ alias shm="cmdmenu -f ~/cmdmenu_tasks/ubuntu_general.json"
+    $ alias gim="cmdmenu -f ~/cmdmenu_tasks/git.json"
+    ```
 
 3. Get task syntax at the command line.
 
