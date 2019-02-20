@@ -26,18 +26,19 @@ $ alias gim="cmdmenu -f ~/cmdmenu_tasks/git.json"
 ```
 
 3. Get task syntax at the command line.
-```
-$ gim get folder size
-? Select task (Use arrow keys)
-❯ Show folder size
-  Show file size
-  Merge folders
-(Move up and down to reveal more choices)
-```
-press enter
 
-```
-du -sh <folder>
-? Copy? (Y/n)
-```
+    ```
+    $ gim get folder size
+    ? Select task (Use arrow keys)
+    ❯ Show folder size
+      Show file size
+      Merge folders
+    (Move up and down to reveal more choices)
+    ```
+    press enter
+
+    ```
+    du -sh <folder>
+    ? Copy? (Y/n)
+    ```
 
