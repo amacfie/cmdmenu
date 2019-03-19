@@ -28,7 +28,7 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
 3. Get task syntax at the command line.
 
     ```
-    $ gim get folder size
+    $ shm get folder size
     ? Select task (Use arrow keys)
     ❯ Show folder size
       Show file size
