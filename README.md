@@ -8,8 +8,8 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
 
 # Install
 
-    $ git clone git@github.com:amacfie/cmd-menu.git
-    $ cd cmd-menu
+    $ git clone git@github.com:amacfie/cmdmenu.git
+    $ cd cmdmenu
     $ sudo npm -g install
 
 
