@@ -3,7 +3,7 @@
 Can't remember the syntax for stuff at the command line?
 Make cheatsheets and search them with `cmdmenu`.
 
-Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
+Similar to [cheat](https://github.com/chrisallenlane/cheat) but different. Even more similar to the newer [navi](https://github.com/denisidoro/navi).
 
 
 # Install
