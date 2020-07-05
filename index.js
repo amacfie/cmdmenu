@@ -69,7 +69,7 @@ var ask = function (lastAnswers) {
         default: true
       })
       .then(function (answers) {
-        if (answers['copy']) return copy(task.cmdText)
+        if (answers['copy']) return copy(task.cmdText + '  # ' + task.name)
       })
      .then( () => process.exit() );
     }
