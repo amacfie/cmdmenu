@@ -10,7 +10,7 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different.
 
     $ git clone git@github.com:amacfie/cmdmenu.git
     $ cd cmdmenu
-    $ sudo npm -g install
+    $ npm -g install
 
 
 # Usage
