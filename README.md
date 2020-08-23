@@ -12,6 +12,7 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different. Even 
     $ cd cmdmenu
     $ npm -g install
 
+or shorthand `npm install -g amacfie/cmdmenu`
 
 # Usage
 
