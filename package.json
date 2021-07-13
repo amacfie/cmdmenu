@@ -2,16 +2,16 @@
   "author": "Andrew MacFie",
   "license": "MIT",
   "name": "cmdmenu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fuzzy command-line cheatsheet",
   "main": "index.js",
   "preferGlobal": "true",
   "dependencies": {
-    "clipboardy": "2.3.0",
-    "fuse.js": "^3.0.5",
-    "inquirer": "^3.2.2",
-    "shelljs": "^0.8.4",
-    "yargs": "^8.0.2"
+    "clipboardy": "2.x",
+    "fuse.js": "3.x",
+    "inquirer": "3.x",
+    "shelljs": "0.8.x",
+    "yargs": "8.x"
   },
   "bin": {
     "cmdmenu": "index.js"
