@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 
-const promisify = require('util.promisify');
-
+const fs = require('fs');
 const Fuse = require('fuse.js');
 const inq = require('inquirer');
 const path = require('path');
 const shell = require('shelljs');
 
-const ncp = require('copy-paste');
-  var copy = promisify(ncp.copy);
+const clipboardy = require('clipboardy');
 
 const argv = require('yargs')
   .demandCommand(1)
@@ -24,7 +22,7 @@ const argv = require('yargs')
   .argv;
 
 var taskFileName = argv.f;
-var tasks = require(taskFileName);
+var tasks = JSON.parse(fs.readFileSync(taskFileName));
 
 var allTasks = [];
 var traverseTask = function (task) {
@@ -69,7 +67,9 @@ var ask = function (lastAnswers) {
         default: true
       })
       .then(function (answers) {
-        if (answers['copy']) return copy(task.cmdText + '  # ' + task.name)
+        if (answers['copy']) {
+          clipboardy.writeSync(task.cmdText + '  # ' + task.name);
+        }
       })
      .then( () => process.exit() );
     }
