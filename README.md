@@ -5,6 +5,10 @@ Make cheatsheets and search them with `cmdmenu`.
 
 Similar to [cheat](https://github.com/chrisallenlane/cheat) but different. Even more similar to the newer [navi](https://github.com/denisidoro/navi).
 
+See also
+* [microsoft/Codex-CLI](https://github.com/microsoft/Codex-CLI)
+* [abhagsain/ai-cli](https://github.com/abhagsain/ai-cli)
+
 
 # Install
 
