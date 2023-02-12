@@ -23,7 +23,7 @@ See also
 
 2. Make an alias for each task file. For example:
     ```bash
-    $ alias shm="cmdmenu -f ~/cmdmenu_tasks/ubuntu_general.json"
+    $ alias shm="cmdmenu -f ~/cmdmenu_tasks/linux.json"
     $ alias gim="cmdmenu -f ~/cmdmenu_tasks/git.json"
     ```
 
