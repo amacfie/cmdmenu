@@ -8,6 +8,7 @@ Similar to [cheat](https://github.com/chrisallenlane/cheat) but different. Even 
 See also
 * [microsoft/Codex-CLI](https://github.com/microsoft/Codex-CLI)
 * [abhagsain/ai-cli](https://github.com/abhagsain/ai-cli)
+* [rareranger/chatgpt-linux-assistant](https://github.com/rareranger/chatgpt-linux-assistant)
 
 
 # Install
