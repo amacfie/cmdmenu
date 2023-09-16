@@ -6,9 +6,7 @@ Make cheatsheets and search them with `cmdmenu`.
 Similar to [cheat](https://github.com/chrisallenlane/cheat) but different. Even more similar to the newer [navi](https://github.com/denisidoro/navi).
 
 See also
-* [microsoft/Codex-CLI](https://github.com/microsoft/Codex-CLI)
-* [abhagsain/ai-cli](https://github.com/abhagsain/ai-cli)
-* [rareranger/chatgpt-linux-assistant](https://github.com/rareranger/chatgpt-linux-assistant)
+* [TheR1D/shell_gpt](https://github.com/TheR1D/shell_gpt)
 
 
 # Install
